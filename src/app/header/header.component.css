@@ -1,0 +1,73 @@
+/* Navbar styles */
+
+.navbar {
+    height: 60px; /* Adjust as necessary */
+  }
+  
+  /* Side nav button styles */
+  
+  .side-nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .side-nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30%;
+  }
+  
+  /* Search form styles */
+  
+  form {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Profile logo styles */
+  
+  .profile-logo {
+    position: relative;
+  }
+  
+  .profile-logo .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+  }
+  
+  @media (min-width: 200px) {
+    .navbar {
+      height: auto;
+    }
+  
+    .side-nav-button {
+      display: none;
+    }
+  
+    form {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  
+    input[type="text"] {
+      width: auto;
+      max-width: none;
+    }
+  
+    .profile-logo {
+      margin-left: auto;
+    }
+  
+    .profile-logo .dropdown-menu {
+      transform: translateX(-50%);
+    }
+  }
