@@ -1,6 +1,6 @@
 <div id="menu-container">
     <nav class="side-nav">
-      <ul id="menu">
+      <ul id="menu" class="nav-list" [ngClass]="{'nav-list-open': sideNavStatus}">
         <li>
           <a class="home" href="/" title="Dashboard">
             <i class="fa-solid fa-home fa-lg"></i> Home
