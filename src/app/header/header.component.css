@@ -84,3 +84,35 @@
         margin-left: 0.5rem;
       }
   }
+  .logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .logo:hover{
+    font-size: 24px;
+    font-weight: bold;
+    color: grey;
+    text-decoration: none;
+  }
+  /* Media query for small screens */
+@media (max-width: 768px) {
+    .logo {
+      display: none; /* hide the logo on small screens */
+    }
+  
+    .side-nav-button {
+      display: block; /* show the hamburger icon on small screens */
+    }
+  }
+  /* Media query for large screens */
+@media (min-width: 769px) {
+    .logo {
+      display: block; /* show the logo on large screens */
+    }
+  
+    .side-nav-button {
+      display: none; /* hide the hamburger icon on large screens */
+    }
+  }

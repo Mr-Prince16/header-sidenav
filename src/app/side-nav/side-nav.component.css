@@ -4,23 +4,67 @@
   }
   
   #menu {
-    display: block;
     margin: 0;
     padding: 0;
   }
   
   #menu > li {
-    display: block;
     margin: 0;
     padding: 0;
   }
   
   #menu > li > ul {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #333;
+    padding: 0.5rem 0;
   }
   
   #menu > li:hover > ul {
     display: block;
   }
   
- 
+  .side-nav {
+    background-color: black;
+  }
+  
+  .side-nav a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    display: block;
+    color: #fff;
+  }
+  
+  .side-nav li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .side-nav ul.menus li {
+    margin: 0;
+  }
+  
+  .side-nav ul.menus a {
+    padding-left: 2rem;
+  }
+  
+  .side-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .side-nav {
+      display: none;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
