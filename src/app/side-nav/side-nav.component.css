@@ -1,27 +1,26 @@
-nav ul {
-    list-style: none;
+#menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #menu {
+    display: block;
     margin: 0;
     padding: 0;
   }
   
-  nav li {
+  #menu > li {
     display: block;
-    position: relative;
+    margin: 0;
+    padding: 0;
   }
   
-  nav a {
-    display: block;
-    padding: 10px;
-  }
-  
-  nav ul ul {
+  #menu > li > ul {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
   
-  nav ul li:hover > ul {
+  #menu > li:hover > ul {
     display: block;
   }
   
+ 
